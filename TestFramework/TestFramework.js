@@ -17,9 +17,11 @@ Test.prototype.compareArray = function (actual, expectation) {
       differencesCounter --;
     }
   };
-  if (differencesCounter > 0) {
-    console.log('Test Failed');
-  } else {
-    console.log('Test Passed');
-  }
+
+  (differencesCounter > 0)? console.log('Test Failed') : console.log('Test Passed');
+  // if (differencesCounter > 0) {
+  //   console.log('Test Failed');
+  // } else {
+  //   console.log('Test Passed');
+  // }
 };
