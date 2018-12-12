@@ -1,16 +1,37 @@
-function NoteList() {
-  this.notes = [];
-}
+(function(exports) {
+  function NoteList() {
+    this.notes = [];
+  }
 
-NoteList.prototype.addNote = function (string) {
-  var note = new Note(string);
-  this.notes.push(note);
-};
-
-NoteList.prototype.viewNotes = function () {
-  var notesArray = []
-  for (var i = 0; i < this.notes.length; i++) {
-    notesArray.push(this.notes[i].returnText());
+  NoteList.prototype.addNote = function (string) {
+    var note = new Note(string);
+    this.notes.push(note);
   };
-  return notesArray;
-};
+
+  NoteList.prototype.viewNotes = function () {
+    var notesArray = []
+    for (var i = 0; i < this.notes.length; i++) {
+      notesArray.push(this.notes[i].returnText());
+    };
+    return notesArray;
+  };
+
+  exports.NoteList = NoteList;
+})(this);
+
+// function NoteList() {
+//   this.notes = [];
+// }
+//
+// NoteList.prototype.addNote = function (string) {
+//   var note = new Note(string);
+//   this.notes.push(note);
+// };
+//
+// NoteList.prototype.viewNotes = function () {
+//   var notesArray = []
+//   for (var i = 0; i < this.notes.length; i++) {
+//     notesArray.push(this.notes[i].returnText());
+//   };
+//   return notesArray;
+// };
