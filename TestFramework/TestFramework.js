@@ -2,11 +2,11 @@ function Test() {
 
 }
 
-Test.prototype.compare = function (actual, expectation) {
+Test.prototype.compare = function (comment, actual, expectation) {
   if (actual === expectation) {
-    console.log('Test Passed');
+    console.log(comment + ' Test Passed');
   } else {
-    console.log('Test Failed');
+    console.log(comment + ' Test Failed');
   }
 };
 
@@ -19,5 +19,5 @@ Test.prototype.compareArray = function (actual, expectation) {
   };
 
   (differencesCounter > 0)? console.log('Test Failed') : console.log('Test Passed');
-  
+
 };

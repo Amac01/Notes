@@ -4,4 +4,4 @@ var noteList = new NoteList();
 noteList.addNote("abc");
 noteList.addNote("def");
 
-testOne.compareArray(noteList.viewNotes(), ["abc", "def"])
+testOne.compareArray("", noteList.viewNotes(), ["abc", "def"])
