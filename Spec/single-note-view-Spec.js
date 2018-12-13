@@ -1,8 +1,8 @@
 var testOne = new Test();
 
 
-notelist2 = new NoteList();
-notelist2.addNote("Favourite color: blue");
-noteview = new NoteView(notelist2);
+noteList2 = new NoteList();
+noteList2.addNote("Favourite color: purple");
+noteview = new NoteView(noteList2);
 testOne.compare(noteview.returnHTML(),
-"<ul><li><div>Favourite color: blue</div></li></ul>");
+"<ul><li><div>Favourite color: pu</div></li></ul>");

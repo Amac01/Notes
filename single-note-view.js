@@ -10,7 +10,7 @@
     } else {
       var result = "<ul>";
       for(var i = 0; i < this.noteList.notes.length; i++){
-        result += "<li><div>" + this.noteList.notes[i].text + "</div></li>";
+        result += "<li><div>" + this.noteList.notes[i].text.slice(0, 19) + "</div></li>";
       }
       return result + "</ul>";
     }
